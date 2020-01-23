@@ -11,7 +11,7 @@ class nginx::config (
   String $process_user          = $::nginx::config_process_user,
   String $docroot               = $::nginx::docroot,
 ){
-  file {'nginx_conf':
+  file {'nginx.conf':
     ensure  => $ensure,
     path    => "${config_dir}/nginx.conf",
     mode    => $mode,
