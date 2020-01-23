@@ -4,7 +4,7 @@ class nginx::service (
   String $pattern      = $::nginx::service_pattern,
   Boolean $enable      = $::nginx::service_enable,
   Boolean $hasstatus   = $::nginx::service_hasstatus,
-  Boolean $hasrestart  = $::nginx::serivce_hasrestart,
+  Boolean $hasrestart  = $::nginx::service_hasrestart,
 ){
   service { 'nginx_service':
     ensure     => $ensure,
