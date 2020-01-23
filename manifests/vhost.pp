@@ -4,7 +4,7 @@ define nginx::vhost (
   String $server_aliases               = '',
   Boolean $enable                      = true,
   String $owner                        = $::nginx::config_owner,
-  Stirng $group                        = $::nginx::config_group,
+  String $group                        = $::nginx::config_group,
   String $mode                         = $::nginx::config_mode,
   Optional[String] $config_vdir_enable = $::nginx::config_vdir_enable,
   String $log_dir                      = $::nginx::config_log_dir,
