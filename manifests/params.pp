@@ -2,10 +2,10 @@ class nginx::params {
   $ensure        = 'present'
   $package_name  = 'nginx'
   $config_dir    = '/etc/nginx'
-  $config_ensure ='file'
+  $config_ensure = 'file'
   $config_mode   = '0664'
   $config_owner  = 'root'
-  $config_gorup  = 'root'
+  $config_group  = 'root'
   $config_confd  = "${config_dir}/conf.d"
   $config_log_dir = '/var/log/nginx'
   $config_pid_file = '/run/nginx.pid'
